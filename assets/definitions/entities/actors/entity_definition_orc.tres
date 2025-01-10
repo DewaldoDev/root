@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="EntityDefinition" load_steps=4 format=3 uid="uid://ottecrise16k"]
+
+[ext_resource type="Script" path="res://src/Entities/entity_definition.gd" id="1_l67if"]
+[ext_resource type="Texture2D" uid="uid://igl77qslh2d6" path="res://colored_packed.png" id="2_mpf4y"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wwbax"]
+atlas = ExtResource("2_mpf4y")
+region = Rect2(400, 32, 16, 16)
+
+[resource]
+script = ExtResource("1_l67if")
+name = "Orc"
+texture = SubResource("AtlasTexture_wwbax")
+color = Color(1, 1, 1, 1)
+is_blocking_movement = true
